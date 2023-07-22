@@ -1,0 +1,191 @@
+@font-face {
+    font-family: "TT Lakes";
+    src: local("TT Lakes Regular"), local("TT-Lakes-Medium"),
+    url("fonts/TTLakes-Regular.woff") format("woff"),
+    url("fonts/TTLakes-Regular.eot") format("eot"),
+    url("fonts/TTLakes-Regular.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TT Lakes";
+    src: local("TT Lakes Bold"), local("TT-Lakes-Bold"),
+    url("fonts/TTLakes-Bold.woff") format("woff"),
+    url("fonts/TTLakes-Bold.eot") format("eot"),
+    url("fonts/TTLakes-Bold.ttf") format("ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+    url('fonts/TTLakes-Medium.eot') format('embedded-opentype'),
+    url('fonts/TTLakes-Medium.woff') format('woff'),
+    url('fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    background: none;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "TT Lakes", "Verdana", sans-serif;
+    color: #000;
+    font-size: 16px;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+.sidemenu{
+    display: block;
+    width: 320px;
+    height: 1024px;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);;
+}
+
+.sidemenu-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 88px;
+}
+
+.sidemenu-header__sidebar-icon{
+    margin-left: 24px;
+}
+
+.sidemenu-header__logo-icon{
+    margin-left: 17px;
+}
+
+.sidemenu-header__search-icon{
+    margin-right: 24px;
+    margin-left: auto;
+}
+
+.sidemenu__navigation{
+    width:320px;
+}
+
+.navigation{
+    margin-top: 12px;
+}
+
+.navigation__link{
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    padding: 16px 24px;
+}
+
+
+
+.navigation__link:hover{
+    transition-duration: 200ms;
+    opacity: 0.5;
+}
+
+.navigation__link--active{
+    color: #7E7E82;
+    background-image: url("img/highlight.svg");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    opacity: 1;
+}
+
+.sidemenu-footer__contact-icons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+}
+
+.contact-icons{
+    margin-top: 260px;
+}
+
+.contact-icons__call-icon{
+    margin-left: 24px;
+}
+
+.contact-icons__chat-icon, .contact-icons__profile-icon {
+    margin-left: 16px;
+}
+
+.contact-info__email, .contact-info__telephone{
+    display: block;
+    margin-left: 24px;
+}
+
+.contact-info__email{
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+.contact-info__telephone{
+    margin-top: 12px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.language-switch{
+    margin-top: 40px;
+}
+
+.sidemenu-footer__language-switch{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.language-switch{
+    margin-left: 24px;
+}
+
+.language-switch__switcher{
+    display: block;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.sidemenu-footer__language-switch input[type="radio"] {
+    display: none;
+}
+
+
+
+.sidemenu-footer__language-switch input[type="radio"]:checked + .language-switch__switcher{
+    cursor: pointer;
+    color: #7E7E82;
+}
+
+.contact-icons img:hover, .sidemenu-header__sidebar-icon:hover, .sidemenu-header__search-icon:hover{
+    transition-duration: 200ms;
+    opacity: 0.8;
+    scale: 0.95;
+}
